@@ -7,36 +7,36 @@
 
 /*
 * This is the main code to run the and approximate where the bottle rocket will land
-* With all of the specification of the bottlerocket.	
+* With all of the specification of the bottlerocket.
 */
 
 struct bottleparameters {
-	double gamma; 
-	double amb_pressure; 
+	double gamma;
+	double amb_pressure;
 	double R;
 	double mass_initial;
-	double L_pad; 
+	double L_pad;
 	double nu;
 	double pressure_initial;
-	double mass_water_initial; 
+	double mass_water_initial;
 	double volume_initial;
 	double rho_water;
 	double area_exit;
 	double g;
 	double area_bottle;
 	double c_D;
-	double *velocity_wind; 
+	double *velocity_wind;
 	double c_d;
-	double area_throat; 
+	double area_throat;
 	double mass_air_initial;
 	double dry_mass;
-	double rho_air_atm; 
+	double rho_air_atm;
 	double m_air_F;
-	double amb_Temperature; 
+	double amb_Temperature;
 	double theta_initial;
 	double Pend;
 	double Tend;
-	double volume_air_initial; 
+	double volume_air_initial;
 };
 
 
@@ -56,7 +56,7 @@ C.velocity_wind = calloc(3,sizeof(double));
 
 // Known
 alt                 = 5064;                      // [ft]
-P_valve             = 40;                        // [psi] 
+P_valve             = 40;                        // [psi]
 initial_angle       = 45;                        // [deg]
 C.amb_Temperature     = 68;                        // [F]
 wind                = calloc(3,sizeof(double));  // [mph]
@@ -71,7 +71,7 @@ C.area_bottle         = (.0079);                   // [m^2]
 C.L_pad               = .58;                       // [m]
 C.c_d                 = .3;                        // discharge coefficient
 
-// Constants 
+// Constants
 C.R                   = 287;                       // J/kg/K
 C.gamma               = 1.4;                       // for air
 C.g                   = 9.80665;                   // m/s^2
