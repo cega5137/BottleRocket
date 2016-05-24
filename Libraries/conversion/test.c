@@ -32,14 +32,14 @@ double convvel(double old, char from[10], char to[10]) {
 					new = old*12;
 
 				case "km/h" :
-					new = old;
+					new = old/3.28084*3600 ;
 
 				case "kts" :
-					new = old;
+					new = old*1.68781;
 
 				case "ft/min" :
-					new = old;
-				
+					new = old*60;
+
 			}
 		case "m/s" :
 			switch (to) {
@@ -63,7 +63,7 @@ double convvel(double old, char from[10], char to[10]) {
 
 				case "ft/min" :
 					new = old;
-				
+
 			}
 		case "km/s" :
 			switch (to) {
@@ -87,7 +87,7 @@ double convvel(double old, char from[10], char to[10]) {
 
 				case "ft/min" :
 					new = old;
-				
+
 			}
 		case "mph" :
 			switch (to) {
@@ -111,7 +111,7 @@ double convvel(double old, char from[10], char to[10]) {
 
 				case "ft/min" :
 					new = old;
-				
+
 			}
 		case "in/s" :
 			switch (to) {
@@ -135,7 +135,7 @@ double convvel(double old, char from[10], char to[10]) {
 
 				case "ft/min" :
 					new = old;
-				
+
 			}
 
 		case "km/h" :
@@ -160,7 +160,7 @@ double convvel(double old, char from[10], char to[10]) {
 
 				case "ft/min" :
 					new = old;
-				
+
 			}
 
 		case "kts" :
@@ -185,7 +185,7 @@ double convvel(double old, char from[10], char to[10]) {
 
 				case "ft/min" :
 					new = old;
-				
+
 			}
 
 		case "ft/min" :
@@ -210,7 +210,7 @@ double convvel(double old, char from[10], char to[10]) {
 
 				case "m/s" :
 					new = old;
-				
+
 			}
 	}
 
